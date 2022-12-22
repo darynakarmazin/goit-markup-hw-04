@@ -376,10 +376,16 @@ body {
   fill: var(--pressed-state);
   border: 1px solid var(--pressed-state);
 }
-.company-icon:hover,
+.company-link:hover  .company-icon { 
+  fill: var(--pressed-state); 
+  }
+.company-link:focus  .company-icon { 
+  fill: var(--pressed-state); 
+  }
+/* .company-icon:hover,
 .company-icon:focus {
   fill: var(--pressed-state);
-}
+} */
 .company-icon {
   fill: currentColor;
 }
