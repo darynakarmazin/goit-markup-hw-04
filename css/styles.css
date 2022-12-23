@@ -14,7 +14,7 @@ html {
   --accent: #4d5ae5;
   --pressed-state: #404bbf;
   --white-hero-text: #ffffff;
-  --light-mode-backgrounds: #F4F4FD;
+  --light-mode-backgrounds: #f4f4fd;
 }
 h1,
 h2,
@@ -205,6 +205,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 8px;
   background-color: #f4f4fd;
   border-radius: 4px;
   height: 112px;
@@ -295,11 +296,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .titte-team-card {
-  padding: 32px 16px;
+  padding: 32px 16px 36px 16px;
 }
 .team-list .title {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -318,8 +319,8 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  /* padding-top: 4px;
+  padding-bottom: 4px; */
 }
 .team-social-list .item {
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -376,12 +377,12 @@ body {
   fill: var(--pressed-state);
   border: 1px solid var(--pressed-state);
 }
-.company-link:hover  .company-icon { 
-  fill: var(--pressed-state); 
-  }
-.company-link:focus  .company-icon { 
-  fill: var(--pressed-state); 
-  }
+.company-link:hover .company-icon {
+  fill: var(--pressed-state);
+}
+.company-link:focus .company-icon {
+  fill: var(--pressed-state);
+}
 /* .company-icon:hover,
 .company-icon:focus {
   fill: var(--pressed-state);
@@ -416,14 +417,14 @@ footer {
   width: 264px;
   margin-right: 120px;
 }
-.footer-social-block {
+/* .footer-social-block {
   width: 208px;
-}
+} */
 .social-link-title {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-hero-text);
 }
@@ -431,8 +432,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-top: 4px;
-  padding-bottom: 4px;
 }
 .footer-social-link {
   display: flex;
@@ -444,7 +443,7 @@ footer {
   border-radius: 50%;
 }
 .footer-social-link:hover,
-.tfooter-social-link:focus {
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
 .footer-icon-social {
@@ -502,8 +501,9 @@ footer {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-top: none;
 }
-.portfolio-list .titte-card:hover {
-  border: 0.5px solid #f4f4fd;
+.portfolio-list .item:hover,
+.portfolio-list .item:focus  {
+  /* border: 0.5px solid #f4f4fd; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
